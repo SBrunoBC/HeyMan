@@ -7,6 +7,10 @@
  *
  * Main index file for HeyMan CMS.
  */
+
+// Include the database details.
+require_once ("assets/includes/connect_db.php");
+
  ?>
 <!DOCTYPE html>
 <html lang="en">
