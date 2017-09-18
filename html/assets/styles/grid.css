@@ -1,0 +1,138 @@
+/**
+ * grid.css is part HeyMan CMS.
+ * Created by Sal Bruno.
+ * Copyright 2017 Sal Bruno
+ * Licensed under the MIT License.
+ * Read full copy in LICENSE.txt
+ */
+/*
+ ============================================================
+  This file is for our grid classes. These grids are:
+      -12 column grid with no gutter for laptops and
+      desktops.
+      -12 column grid without gutter for tablets,
+      with all columns >= 6 being full-width.
+      -For devices like cellphones the grid will stack
+      vertically (full-width).
+ ============================================================
+ */
+/*
+ =============================================
+    This is the container for the grid. ALL
+    rows must be in a container, but you may
+    have several rows per container.
+ =============================================
+ */
+.container {
+    margin: 0 auto;
+    width: 100%;
+}
+/* The row class with clearfix applied. */
+.row:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+/* Styles for all columns */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+/*
+ =============================================
+   Set width to 100% default for cellphones.
+   Separated from block above for readability
+   only.
+ =============================================
+ */
+[class*="col-"] {
+    width: 100%;
+}
+/*
+ =============================================
+    Styles for medium sized screens.
+ =============================================
+ */
+@media only screen and (min-width: 500px) {
+    .col-m-1 {
+        width: 16.66%;
+    }
+    .col-m-2 {
+        width: 33.33%;
+    }
+    .col-m-3 {
+        width: 50%;
+    }
+    .col-m-4 {
+        width: 66.66%;
+    }
+    .col-m-5 {
+        width: 83.33%;
+    }
+    .col-m-6 {
+        width: 100%;
+    }
+    .col-m-7 {
+        width: 100%;
+    }
+    .col-m-8 {
+        width: 100%;
+    }
+    .col-m-9 {
+        width: 100%;
+    }
+    .col-m-10 {
+        width: 100%;
+    }
+    .col-m-11 {
+        width: 100%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}
+/*
+ =============================================
+   12 columns, responsive, no gutter. Columns
+   must be <= 12. One set of columns per row.
+   for laptops and desktops.
+ =============================================
+ */
+@media only screen and (min-width: 768px) {
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}
