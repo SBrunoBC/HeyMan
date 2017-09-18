@@ -1,0 +1,25 @@
+/**
+ * main.css is part HeyMan CMS.
+ * Created by Sal Bruno.
+ * Copyright 2017 Sal Bruno
+ * Licensed under the MIT License.
+ * Read full copy in LICENSE.txt
+ */
+* {
+    margin: 0;
+    padding: 0;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {}
+body {
+    background-color: #ffffff;
+    color: #001122;
+    font: 300 16px/22px "Trebuchet MS", Helvetica, sans-serif;
+}
+.img-fluid {
+    display: block;
+    height: auto;
+    width: 100%;
+}
