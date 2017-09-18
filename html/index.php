@@ -9,6 +9,7 @@
  */
 
 // Include the database details.
+$isIndexToDB = TRUE;
 require_once ("assets/includes/connect_db.php");
 
  ?>
